@@ -9,7 +9,7 @@ DEPLOY_PATH=/home/$PROJECT_NAME/
 cp $BUILD_JAR $DEPLOY_PATH
 
 echo "> 현재 실행중인 애플리케이션 pid 확인" >> /home/$PROJECT_NAME/deploy.log
-CURRENT_PID=$(pgrep -f $JAR_NAME)
+CURRENT_PID=$(pgrep -f $PROJECT_NAME)
 
 echo "> 현재 실행중인 애플리케이션 pid : $CURRENT_PID" >> /home/$PROJECT_NAME/deploy.log
 
